@@ -1,0 +1,63 @@
+.body_show {
+    background-color: rgb(0, 0, 0);
+}
+#sagar_gupta_art {
+    width: 70px;
+    height: 70px;
+    float: right;
+    margin: 20px;
+}
+.Planets {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+}
+#h1 {
+    color: rgb(189, 165, 165);
+    font-size: 40px;
+    margin: 20px;
+}
+.div {
+    margin: 20px;
+}
+#button {
+    font-size: 30px;
+    background-color: black;
+    color: rgb(201, 181, 181);
+    margin-left: 20px;
+}
+#p {
+ color: rgb(194, 181, 181);
+ font-size: 30px;
+}
+#h2 {
+    color: white;
+}
+#h3 {
+    color: white;
+    margin: 20px;
+    font-size: 30px;
+}
+.planet {
+width: 500px;
+}
+#h4 {
+    color: white;
+    font-size: 25px;
+}
+#h5 {
+    color: white;
+    font-size: 30px;
+}
+#h6 {
+    color: rgb(2, 0, 0);
+    font-size: 30px;
+}
+#input {
+    width: 30%;
+    height: 5%;
+}
+ #h7 {
+     color: black;
+ }
+

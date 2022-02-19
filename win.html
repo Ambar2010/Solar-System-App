@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>point</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    </head>
+    <body class="body_show">
+        <img id="sagar_gupta_art" src="sagar gupta art.jpg">
+        <center>
+            <button id="button" onclick="index()">Welcome to the Solar System app</button>
+            <h1 id="h1">Welcome to the Solar System quizes</h1>
+            <div class="div">
+        <h5 id="h5">Score</h5>
+        <div id="output"></div>
+        <h6 id="h6"><button class="button" onclick="show_score()">Show score</button></h6>
+    </div>
+    </center>
+        <script>
+          score =   localStorage.getItem("score");
+          function show_score() {
+            point = "<h6 id='h5'>Score : <span>" + score + "</span></h5>";
+             document.getElementById("output").innerHTML=point;
+             localStorage.setItem("point", point);
+          }
+            function index() {
+                window.location = "index.html";
+            }
+        </script>
+    </body>
+</html>
