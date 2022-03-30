@@ -1,12 +1,7 @@
 .body_show {
     background-color: rgb(0, 0, 0);
 }
-#sagar_gupta_art {
-    width: 70px;
-    height: 70px;
-    float: right;
-    margin: 20px;
-}
+
 .Planets {
     width: 180px;
     height: 180px;
@@ -60,4 +55,10 @@ width: 500px;
  #h7 {
      color: black;
  }
-
+ .button {
+    font-size: 30px;
+    background-color: rgb(236, 229, 229);
+    color: rgb(10, 10, 10);
+    margin-left: 20px;
+    
+}

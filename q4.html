@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Quiz</title>
+        <title>Quiz 4</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -10,7 +10,7 @@
 
     </head>
     <body class="body_show">
-        <img id="sagar_gupta_art" src="sagar gupta art.jpg">
+       
         <h3 id="h3">Score : <span id="score">0</span></h3>
         <span> <h5 id="h5">0</h5><h1 id="h1">Question</h1></span>
         <center>
@@ -19,38 +19,42 @@
             <img class="Planet" src="quiz img.jpg">
             <div class="div" id="q1">
                 <h2 id="h2">Q4. What is the smallest Planet  in solar system?</h2>
-                <h6 class="h6"><button id="button" onclick="right()">1. Mercury</button></h6>
-                <h6 id="h6"><button id="button" onclick="wrong()">2. Venus</button></h6>
-                <h6 id="h6"><button id="button" onclick="wrong()">3. Uranus</button></h6>
-                <h6 id="h6"><button id="button" onclick="wrong()">4. jupiter</button></h6>
+                <h6 class="h6"><button id="button" onclick="right()">Mercury</button></h6>
+                <h6 class="h6"><button id="button" onclick="wrong()">Jupiter</button></h6>
+                <h6 class="h6"><button id="button" onclick="wrong()">Mars</button></h6>
+                <h6 class="h6"><button id="button" onclick="wrong()">Uranus</button></h6>
+       
                 <h4 id="h4"></h4>
                 <h6 id="h6"><button class="button" onclick="previous()">Previous</button></h6>
                 <h6 id="h6"><button class="button" onclick="next()">Next</button></h6>
                 
             </div>
-      
            
         </center>
         <script>
-        score = localStorage.getItem("score");
+        score = parseInt(localStorage.getItem("score"));
             question = localStorage.getItem("question");
-         function right() {
-             document.getElementById("h4").innerHTML = "Correct Answer : Mercury is the smallest planet in solar system.";
-             score= 60+20;
-             question = 2-1;
+            document.getElementById("score").innerHTML = score;
+            document.getElementById("h5").innerHTML = question;
+            function right() {
+             
+             document.getElementById("h4").innerHTML = "Correct Answer : mercury is the smallest planet in solar system.";
+             score= score +20;
+             question = question-1;
              document.getElementById("score").innerHTML = score;
              document.getElementById("h5").innerHTML = question;
              localStorage.setItem("score", score);
              localStorage.setItem("question", question);
-         }
-          function wrong() {
-            document.getElementById("h4").innerHTML = "Incorrect Answer : Mercury is the smallest planet in solar system.";
-            question = 2-1;
+             }
+         function wrong() {
+            document.getElementById("h4").innerHTML = "Incorrect Answer : mercury is the smallest planet in solar system.";
+            question = question-1;
             document.getElementById("h5").innerHTML = question;
             localStorage.setItem("score", score);
              localStorage.setItem("question", question);
              document.getElementById("score").innerHTML = score;
-          }
+             }
+          
           function next() {
             window.location = "q5.html";
           }
